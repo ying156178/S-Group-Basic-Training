@@ -3,22 +3,126 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Penguin</title>
+    <title>A Completed Guide to Flexbox in CSS (Phần 1)</title>
 </head>
 <body>
-   <h1>I'm Oanh</h1> 
-   <h2><i>My facebook:</i></h2> <a href="https://facebook.com"><strong><i>Link ne</i></strong></a>
-   <h1>Tieng ai vang vong nui rung</h1>
-   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis esse labore exercitationem repellendus iusto, suscipit consequatur mollitia necessitatibus natus soluta saepe aperiam enim est assumenda corrupti at officiis, earum expedita.</p>
-   <span>hellllo</span>
-   <span>from due</span>
-   <input type="text" placeholder="Nhap loi nhan">
-   <input type="radio" placeholder="dsfs">
-   <input type="checkbox" name="" id="" placeholder="sfgsf">
-   <button>Send to me</button>
-   <img src="https://mcdn.coolmate.me/image/March2023/meme-meo-cute-hai-huoc-1297_599.jpg" alt="Meme meo ne" width="500" height="400">
-   <h1>fgrsg</h1>
-   <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto, sapiente ab natus voluptates saepe unde ducimus iste soluta doloremque dignissimos, nisi, libero blanditiis fugit esse vero beatae deserunt! Id, aliquid. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto eum eius ipsam? Illum, vel saepe nam, blanditiis ad labore deserunt voluptatibus tempore esse deleniti accusamus sit delectus id minima ipsam.</p>
-   <button>This is a button</button>
-</html>
+    <div>
+        <img src="https://images.viblo.asia/full/2ea73483-c88e-4a1e-bcf5-d889a15998a8.png" alt="This is cover of page" width="1490" height="200">
+        <a href="https://viblo.asia/u/tuanlinhtl17"><strong>Nguyen Tuan Linh</strong></a>
+        <span>@tuanlinhtl17</span>
+        <button>Theo dõi</button>
+        <span>Đã đăng vào thg 8 15, 2019 10:23 CH - 6 phút đọc</span>
+        <h1>A Completed Guide to Flexbox in CSS (Phần 1)</h1>
+        <p>Hôm nay mình sẽ giới thiệu với các bạn những tính năng cần biết trong Flexbox của CSS. Vì Flexbox có khá nhiều tính năng hay ho nên mình sẽ tách ra ít nhất là 2 phần để có thể giới thiệu một cách đầy đủ !</p>
+        <h2>I, Một vài thuật ngữ</h2>
+        <p>Bởi vì Flexbox là cả một module trong CSS chứ không phải chỉ là một thuộc tính, do đó nó có chứa hàng tá các thuật ngữ riêng, ta hãy tìm hiểu qua một chút trước khi đi vào các tính năng của Flexbox nhé.</p>
+        <p>Nếu như với layout bình thường của CSS, việc hiển thị của các elements sẽ được dựa trên block và inline flow directions, thì trong flex layout chúng ta sử dụng "flex-flow directions". Các bạn hãy quan sát ảnh dưới:</p>
+        <img src="https://images.viblo.asia/cbfd1fde-582c-4d2c-b2ed-56a44b1e4994.png" alt="about flex-direction">
+        <p>Nào hãy cùng giải thích từng khái niệm nhé:</p>
+        <p><strong>Flex container: </strong>Là một element được cài đặt thuộc tính display: flex /* hoặc inline-flex */. Đây sẽ là môi trường chứa các phần tử khác cần được hiển thị theo Flexbox.</p>
+        <p><strong>Flex item:</strong> Các phần tử con của container được gọi là item, ở item bạn có thể thiết lập nó sẽ sử dụng bao nhiêu cột trong một container, hoặc thiết lập thứ tự hiển thị của nó.</p>
+        <p>Đó là hai khái niệm chính, bây giờ chúng ta sẽ xem qua một vài khái niệm khác nhé:</p>
+        <p><strong>main axis</strong> - Đây là trục mà các item sẽ hiển thị khi nằm trong container. Nó không nhất thiết phải theo chiều ngang như trên hình vẽ (đấy chỉ là mình lấy ví dụ thế), chúng ta có thể thay đổi được hướng của main-axis.</p>
+        <p><strong>main-start | main-end </strong>- Đây là 2 điểm bắt đầu và kết thúc của trục main.</p>
+        <p><strong>main size</strong> - Bạn có thể hiểu đơn giản là kích thước (chiều rộng hoặc dọc) của mỗi item dựa theo trục main axis.</p>
+        <p><strong>cross axis </strong>- Đây là chiều vuông góc với trục main, direction của nó phụ thuộc hoàn toàn vào việc bạn cài đặt direction của trục main như thế nào.</p>
+        <p><strong>cross-start | cross-end </strong>- Đây là 2 điểm bắt đầu và kết thúc của trục cross.</p>
+        <p><strong>cross size </strong>- Kích thước (chiều rộng hoặc dọc) của mỗi item dựa theo trục cross.</p>
+    </div>
+    <div>
+        <h2>II, Các thuộc tính dành cho flex container</h2>
+        <!-- display -->
+        <h3>1, display</h3>
+        <p>Đây đơn giản là thuộc tính display trong CSS thôi. Cũng như Block, Inline hay Inline-block, ta tạo ra một flex container bằng cách thiết lập cho 1 element thuộc tính này có giá trị như sau:</p>
+        <p>.container { <br>
+            display: flex; /* or inline-flex */ <br>
+          }</p>
 
+        <!-- flex direction -->
+        <h3>2, flex-direction</h3>
+        <img src="https://images.viblo.asia/4129cabc-a5c7-4e14-ae31-8216e6ef6916.png" alt="flex-direction">
+        <p>Đây chính là thuộc tính sẽ giúp điều chỉnh hướng của main-axis (cũng chính là hướng mà các item sẽ hiển thị). Flexbox là một single-direction layout concept, vậy nên các item sẽ <strong>chỉ</strong> được hiển thị theo 1 trong 2 kiểu đó là ngang hoặc dọc.</p>
+        <p>.container { <br>
+            flex-direction: row | row-reverse | column | column-reverse; <br>
+          }
+        </p>
+        <p>row (kiểu mặc định): Các item được sắp xếp theo chiều ngang, từ trái sang phải.</p>
+        <p>row-reverse : Các item được sắp xếp theo chiều ngang, từ phải sang trái.</p>
+        <p>column : Các item được sắp xếp theo chiều dọc, từ trên xuống dưới.</p>
+        <p>column-reverse : Các item được sắp xếp theo chiều dọc, từ dưới lên trên.</p>
+        
+        <!-- flex-wrap -->
+        <h3>3, flex-wrap</h3>
+        <img src="https://images.viblo.asia/e1464e5c-18b6-4c76-8da0-399a69aa4590.png" alt="flex-wrap">
+        <p>Mặc định thì các flex item sẽ luôn nằm trên 1 dòng, ta có thể thay đổi điều này dựa trên thuộc tính flex-wrap.</p>
+        <p>.container{ <br>
+            flex-wrap: nowrap | wrap | wrap-reverse; <br>
+          }
+        </p>
+        <p>nowrap (default): Các flex item sẽ luôn nằm trên 1 dòng</p>
+        <p>wrap: Các flex item sẽ nằm trên nhiều dòng, từ trên xuống dưới</p>
+        <p>wrap-reverse: Các flex item sẽ nằm trên nhiều dòng, từ dưới lên trên</p>
+        
+        <!-- justify content -->
+        <h3>4, justify-content</h3>
+        <img src="https://images.viblo.asia/26b70b28-1b8c-4ea1-b2b5-49e549566070.png" alt="justify-content">
+        <p>Đây là cách mà các item sắp xếp cách hiển thị trong container.</p>
+        <p>.container { <br>
+            justify-content: flex-start | flex-end | center | space-between | space-around | space-evenly; <br>
+          }
+        </p>
+        <p>flex-start (default): Các item được "căn lề trái"</p>
+        <p>flex-end: Các item được "căn lề phải"</p>
+        <p>center: Các item được "căn giữa"</p>   
+        <p>space-between: Các item được phân phối khoảng cách ngang nhau trên dòng. Item đầu tiên được gắn chặt vào main start và item cuối cùng được gắn chặt vào main end</p>
+        <p>space-around: Tương tự như space-between tuy nhiên item đầu tiên và cuối cùng "cách lề" một khoảng bằng <strong>nửa </strong>khoảng cách giữa các item</p>
+        <p>space-evenly: Tương tự như space-around tuy nhiên item đầu tiên và cuối cùng "cách lề" một khoảng bằng khoảng cách giữa các item</p>
+
+        <!-- align item -->
+        <h3>5, align-items</h3>
+        <img src="https://images.viblo.asia/793009f7-e87b-4ec9-9bb7-7523229a89dd.png" alt="align item">
+        <p>Có thể coi đây là justify-content phiên bản dành cho cross-axis.</p>
+        <p>.container { <br>
+            align-items: stretch | flex-start | flex-end | center | baseline; <br>
+          }
+        </p>
+        <p>stretch (default): Các item sẽ co giãn để "fill" đầy container (vẫn tuân theo max-width/min-width)</p>
+        <p>flex-start: Có thể coi là "căn lề trên"</p>
+        <p>flex-end: Đây là "căn lề dưới"</p>
+        <p>center: Các item nằm giữa container</p>
+        <p>baseline: Các item được sắp xếp theo baseline của chúng.</p>
+
+        <!-- align content -->
+        <h3>6, align-content</h3>
+        <img src="https://images.viblo.asia/51a0934c-0204-4892-a771-1040ebe64838.png" alt="align content">
+        <p>Nếu như align-items là justify-content phiên bản cross-axis dành cho các item nằm trên 1 dòng, thì align-content là phiên bản dành cho <strong>các dòng</strong>.</p>
+        <p>.container { <br>
+            align-content: flex-start | flex-end | center | space-between | space-around | stretch; <br>
+          }
+        </p>
+        <p>flex-start: Các dòng được "căn lề trên"</p>
+        <p>flex-end: Các dòng được "căn lề dưới"</p>
+        <p>center: Các dòng được "căn giữa"</p>
+        <p>space-between: Tương tự phần justify-content nhưng theo trục cross</p>
+        <p>space-around: <i>Như trên</i></p>
+        <p>stretch (default): Các dòng được kéo giãn để fill đầy các khoảng trống</p>
+        
+        <!-- Tam ket -->
+        <h2>III, Tạm kết</h2>
+        <p>Trong bài này ta đã đi qua được các thuộc tính cần thiết dành cho flex container, bài sau chúng ta sẽ cùng tìm hiểu về các thuộc tính dành cho flex item nhé !</p>
+        <strong>Nguồn:</strong>
+        <p>1. https://www.w3schools.com/css/css3_flexbox.asp</p>
+        <p>2. https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox</p>
+        <p>3. https://css-tricks.com/snippets/css/a-guide-to-flexbox/</p>
+        <button>Front-end</button>
+        <button>CSS</button>
+        <p>All rights reserved</p>
+
+        <!-- related -->
+        <strong>Bài viết liên quan</strong> <br>
+        <strong>Bài viết khác từ Nguyen Tuan Linh</strong> <br>
+        <strong>Bình luận</strong> <br>
+        <button>Đăng nhập để nhập bình luận</button>
+    </div>
+    </body>
+</html>
