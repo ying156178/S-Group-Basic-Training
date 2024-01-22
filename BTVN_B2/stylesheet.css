@@ -39,14 +39,12 @@ body{
 .container .menu .social a i{
     color: #F26464;
     margin-left: 5px;
-    width: 24px;
-    height: 24px;
+    font-size: 24px;
 }
 .container .menu .social a i:hover{
     color: #000000;
     margin-left: 5px;
-    width: 24px;
-    height: 24px;
+    font-size: 24px;
 }
 /* introduction */
 .container .introduction{
