@@ -1,0 +1,215 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin-top: 15px;
+    width: 95%;
+    font-family: 'Inter', sans-serif ;
+    margin:auto;
+}
+.container{
+    margin-top: 20px;
+}
+.container .menu .logo{
+    display: inline-block;   
+}
+.container .menu .logo .textj{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: black;
+    color: white;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 40px;
+}
+.container .menu .logo .textjason{
+    display: inline-block;
+    margin-left: 12px;
+    font-size: 18px;
+    letter-spacing: 3px;
+}
+/* social */
+.container .menu .social{
+    display: inline-block;
+    margin-left: 70%;   
+}
+.container .menu .social a i{
+    color: #F26464;
+    margin-left: 5px;
+    width: 24px;
+    height: 24px;
+}
+.container .menu .social a i:hover{
+    color: #000000;
+    margin-left: 5px;
+    width: 24px;
+    height: 24px;
+}
+/* introduction */
+.container .introduction{
+    margin-top: 70px;
+}
+/* introduction image */
+.container .introduction .image{
+    display: inline-block;
+}
+.container .introduction .image img{
+    width: 540px;
+    height: 600px;
+}
+/* introduction text */
+.container .introduction .introtext{
+    display: inline-block;
+    align-items: center;
+    margin-left: 50px;
+}
+.container .introduction .introtext span{
+    margin-top: 0px;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+.container .introduction .introtext h1{
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 60px;
+}
+/* intro exp */
+.container .introduction .exp{
+    display: inline-block;
+}
+.container .introduction .exp .exp1{
+    display: inline-block;
+    margin-right: 20px;
+}
+.container .introduction .exp .exp2{
+    display: inline-block;
+    margin-right: 20px;
+}
+.container .introduction .exp .exp3{
+    display: inline-block;
+    margin-left: 25px;
+}
+.container .introduction .exp .exp1 strong{
+    font-size: 36px;
+    font-weight: 800;
+    color: #F26464;
+}
+.container .introduction .exp .exp2 strong{
+    font-size: 36px;
+    font-weight: 800;
+    color: #F26464;
+}
+.container .introduction .exp .exp3 strong{
+    font-size: 36px;
+    font-weight: 800;
+    color: #F26464;
+}
+.container .introduction .exp .exp1 span{
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+.container .introduction .exp .exp2 span{
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+.container .introduction .exp .exp1 span{
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+/* about me */
+.container .aboutme{
+    margin-top: 50px;
+}
+.container .aboutme h2{
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 700;
+    border-bottom: 3px solid #F26464;
+}
+.container .aboutme p{
+    color: #373737;
+    font-size: 24px;
+    line-height: 40px;
+    font-weight: 300;
+    margin-top: 0px;
+}
+.container .aboutme button{
+    display: block;
+    text-align: center;
+    margin-top: 70px;
+    margin-left: 35%;
+    margin-right: 30%;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 14px;
+    border: 2px solid #F26464;
+    border-radius: 60px;
+    letter-spacing: 3px;
+    font-weight: 600px;
+    padding: 17px 30px;
+    color: #F26464;
+    background-color: white;
+}
+.container .aboutme button:hover{
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 14px;
+    border: 2px solid #F26464;
+    border-radius: 60px;
+    letter-spacing: 3px;
+    font-weight: 600px;
+    padding: 17px 30px;
+    color: #ffffff;
+    background-color:#F26464;
+}
+/* skill */
+.container .skill{
+    display: inline-block;
+}
+.container .skill .core{
+    display: inline-block;
+}
+.container .skill .other{
+    display: inline-block;
+    margin-left: 50px;
+
+}
+.container .skill .core h2{
+    border-bottom: 3px solid #F26464;
+    font-weight: 700;
+    color: black;
+    letter-spacing: 1px;
+    font-size: 16px;
+    margin-top: 120px;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+.container .skill .skill-list div{
+    display: inline-block;
+    color: #373737;
+    font-size: 16px;
+    border: 1px solid #D7D7D7;
+    padding: 10px 20px;
+    margin-bottom: 15px;
+    margin-right: 15px;
+    border-radius: 27px;
+    margin: 10px;
+    font-weight: 500;
+}
+.container .skill .other h2{
+    border-bottom: 3px solid #F26464;
+    font-weight: 700;
+    color: black;
+    letter-spacing: 1px;
+    font-size: 16px;
+    margin-top: 120px;
+    margin-bottom: 20px;
+    display: inline-block;
+}
