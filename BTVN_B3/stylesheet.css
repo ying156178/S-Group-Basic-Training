@@ -1,0 +1,427 @@
+/* reset Css */
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    font-family: "Inter",sans-serif;
+}
+/* css menu bar */
+.container{
+    width: 90%;
+    margin: auto;
+}
+.container-menu .menu{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.container-menu{
+    position: fixed;
+    top: 0;
+    width: 100% !important;
+    background-color: white;
+    z-index: 5;
+    padding: 20px 0px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+}
+
+/* css phan logo */
+.container-menu .menu .logo span{
+    display: flex;
+    width: 40px;
+    height: 40px;
+    background-color: black;
+    border-radius: 4px;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    font-weight: 600;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    margin-right: 12px;
+}
+.container-menu .menu .logo .logotext{
+    display: flex;
+    align-items: center;
+    color: black;
+    font-size: 18px;
+    letter-spacing: 3px;
+    text-decoration: none;
+}
+.container-menu .menu .iconset .list-icon{
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+}
+.container-menu .menu .iconset .list-icon .icon i{
+    display: flex;
+    font-size: 16px;
+    margin-left: 15px;
+    color: #ffffff;
+    width: 24px;
+    height: 24px;
+    border: 1px solid #F26464;
+    border-radius: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: #F26464;
+}
+/* pseudo of iconset */
+.container-menu .menu .iconset .list-icon .icon i:hover{
+    display: flex;
+    font-size: 16px;
+    margin-left: 15px;
+    color: #ffffff;
+    width: 24px;
+    height: 24px;
+    border: 1px solid #000000;
+    border-radius: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000;
+}
+.container-menu .menu .iconset .list-icon .icon a{
+    text-decoration: none;
+}
+/* css phan intro */
+.container .introduction{
+    display: flex;
+    margin-top: 85px;
+    justify-content: space-between;
+
+}
+.container .introduction .image{
+    max-width: 60%;
+    margin-left: 0px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+.container .introduction .image img{
+    max-width: 100%;
+}
+.container .introduction .introtext{
+    display: flex;
+    flex-direction: column;
+    padding-left: 70px;
+    padding-right: auto;
+    justify-content: center;
+    width: 100%;
+}
+.container .introduction .introtext span{
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding-bottom: 30px;
+}
+.container .introduction .introtext h1{
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 60px;
+    margin-bottom: 8px;
+}
+.container .introduction .introtext .metrics{
+    display: flex;
+    list-style-type: none;
+    margin-top: 60px;
+    align-items: flex-end;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+.container .introduction .introtext .metrics .metric{
+    margin-right: 50px;
+}
+.container .introduction .introtext .metrics .metric strong{
+    font-size: 36px;
+    font-weight: 800;
+    color: #F26464;
+}
+.container .introduction .introtext .metrics .metric span{
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+.container .aboutme{
+    padding-top: 60px;
+    padding-bottom: 120px;
+}
+.container .aboutme h2{
+    display: inline-block;
+    border-bottom: 3px solid #F26464;
+    font-size: 16px;
+    font-weight: 700;
+    padding-bottom: 7px;
+    margin-bottom: 23px;
+    letter-spacing: 1px;
+}
+.container .aboutme p{
+    color: #373737;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 40px;
+    margin-bottom: 60px;
+}
+.container .aboutme .button{
+    display: flex;
+    justify-content: center;
+}
+.container .aboutme .button button{
+    font-size: 12px;
+    line-height: 13px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    border: 2px solid #F26464;
+    padding: 17px 30px;
+    border-radius: 60px;
+    background-color: white;
+    color: #F26464;
+    justify-content: center;
+}
+/* hover button */
+.container .aboutme .button button:hover{
+    font-size: 12px;
+    line-height: 13px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    border: 2px solid #F26464;
+    padding: 17px 30px;
+    border-radius: 60px;
+    background-color: #F26464;
+    color: #ffffff;
+    justify-content: center;
+}
+/* skill */
+.container .skills{
+    display: flex;
+    padding-bottom: 105px;
+}
+h2.heading{
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    border-bottom: 3px solid #F26464;
+    margin-bottom: 23px;
+}
+.skill-list{
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    
+}
+.skill-list .skill{
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px 20px;
+    border: 1px solid #D7D7D7;
+    border-radius: 27px;
+    color: #373737;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+.container .work-experience h2{
+    display: inline-block;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    border-bottom: 3px solid #F26464;
+    padding-bottom: 7px;
+    margin-bottom: 23px;
+}
+.container .work-experience .exp-box{
+    display: flex;
+}
+.container .work-experience .exp-box div span.time{
+    color: #373737;
+    font-size: 14px;
+    font-weight: 700;
+    padding-bottom: 10px;
+}
+.container .work-experience .exp-box div h3{
+    font-size: 24px;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+.container .work-experience .exp-box div span.position{
+    display: inline-block;
+    color: #373737;
+    font-size: 18px;
+    font-weight: 500;
+    padding-bottom: 30px;
+}
+.container .work-experience .exp-box div p.description{
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+.container .work-experience .exp-box div ul{
+    list-style-type: none;
+}
+.container .work-experience .exp-box div ul .desc-item{
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+    margin-bottom: 20px;
+    position: relative;
+    padding-left: 28px;
+}
+.container .work-experience .exp-box div ul .desc-item::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 10px;
+    border-radius: 100%;
+    width: 8px;
+    height: 8px;
+    background-color: #373737;
+}
+.container .work-experience .exp-box .y2019-present{
+    padding-right: 70px;
+}
+.container .work-experience{
+    padding-bottom: 120px;
+}
+/* lasted work */
+.container .lasted-work .lasted-container{
+    display: flex;
+    flex-direction: column;
+}
+.lasted-container .app{
+    display: flex;
+    background-color: #F6F8FA;
+    padding-top: 40px;
+    padding-left: 70px;
+    padding-right: 70px;
+    margin-bottom: 40px;
+}
+.lasted-container .app .text-desc{
+    padding-right: 30px;
+    padding-bottom: 60px;
+}
+.lasted-container .app div h3.name{ 
+    color: #000000;
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.lasted-container .app .text-desc p{
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 30px;
+    margin-bottom: 1rem;
+}
+.lasted-container .app .text-desc a button{
+    font-size: 12px;
+    line-height: 13px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    border: 2px solid #F26464;
+    padding: 17px 30px;
+    border-radius: 60px;
+    color: #F26464;
+    background-color: #F6F8FA;
+    margin-top: 20px;
+}
+/* hover button detail */
+.lasted-container .app .text-desc a button:hover{
+    font-size: 12px;
+    line-height: 13px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    border: 2px solid #F26464;
+    padding: 17px 30px;
+    border-radius: 60px;
+    color: #ffffff;
+    background-color: #F26464;
+    margin-top: 20px;
+}
+/* image in app */
+.lasted-container .app .img-desc{
+    width: 150%;
+}
+.lasted-container .app .img-desc img{
+    max-width: 100%;
+}
+.lasted-work{
+    margin-bottom: 80px;
+}
+/* contact section */
+.contact{
+    width: 100%;
+    background-color: #000000;
+}
+.contact .info-contact{
+    text-align: center;
+    padding: 120px;
+}
+.contact .info-contact .intouch{
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding-bottom: 20px;
+    color: rgba(255,255,255,0.5);
+}
+.contact .info-contact h4{
+    font-size: 48px;
+    font-weight: 700;
+    color: white;
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
+}
+.contact .info-contact p{
+    letter-spacing: 1.13px;
+    font-size: 18px;
+    margin-bottom: 40px;
+    color: white;
+}
+.contact .info-contact a button {
+    font-size: 12px;
+    line-height: 13px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    border: 2px solid #F26464;
+    padding: 17px 30px;
+    border-radius: 60px;
+    color: #F26464;
+    font-size: 12px;
+    line-height: 13px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    border: 2px solid #F26464;
+    padding: 17px 30px;
+    border-radius: 60px;
+    color: #F26464;
+    background-color: #000000;
+    margin-bottom: 97px;
+}
+/* hover button let talk */
+.contact .info-contact a button:hover {
+    font-size: 12px;
+    line-height: 13px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    border: 2px solid #F26464;
+    padding: 17px 30px;
+    border-radius: 60px;
+    color: #F26464;
+    font-size: 12px;
+    line-height: 13px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    border: 2px solid #F26464;
+    padding: 17px 30px;
+    border-radius: 60px;
+    color: #F26464;
+    background-color: #F26464;
+    margin-bottom: 97px;
+}
+.contact .info-contact .copyright{
+    color: rgba(255,255,255,0.5);
+    font-size: 16px;
+    letter-spacing: 1px;
+}

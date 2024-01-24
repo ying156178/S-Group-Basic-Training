@@ -211,3 +211,12 @@ body{
     margin-bottom: 20px;
     display: inline-block;
 }
+
+.test{
+    width: 100px;
+    height: 100px;
+    background-color: #F26464;
+    position: sticky;
+    top: 10px;
+    margin-top: 500px;
+}
