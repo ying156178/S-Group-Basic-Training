@@ -1,0 +1,244 @@
+/* reset css */
+*{
+    font-family: "Raleway", sans-serif;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+.tong{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #2F3238;
+    align-items: center;
+}
+.container .anh1{
+    position: relative;
+    background: #3085a3;
+    float: left;
+    overflow: hidden;
+    margin: 10px 1%;
+    min-width: 320px;
+    max-width: 480px;
+    max-height: 360px;
+    text-align: center;
+}
+.container .anh1:hover img, .container .anh1:hover h2, .container .anh1:hover p{
+    transform: translate3d(0,0,0);
+
+}
+.container .anh1:hover p{
+    transition-delay: 0.05s;
+    transition-duration: 0.35s;
+}
+.container .anh1:hover img, .container .anh1:hover p{
+    opacity: 1;
+}
+.container .anh1 img{
+    max-width: none;
+    opacity: 0.7;
+    transition: opacity 0.35s, transform 0.35s;
+    transform: translate3d(-40px,0,0);
+}
+.container .anh1 figcaption{
+    text-align: left;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 2em;
+    color: white;
+    font-weight: 400;
+    -webkit-backface-visibility: hidden;
+    font-size: 1.25em;
+}
+.container .anh1 figcaption div{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 2em;
+    width: 100%;
+    height: 50%;
+}
+.container .anh1 figcaption div h2{
+    transition: transform 0.35s;
+    transform: translate3d(0,40px,0);
+    word-spacing: -0.15em;
+    font-weight: 300;
+    font-size: 1.5em;
+}
+.container .anh1 figcaption div h2 span{
+    font-weight: 800;
+}
+.container .anh1 figcaption div p{
+    opacity: 0;
+}
+.container .anh1 figcaption div p:hover{
+    color: rgba(255,255,255,0.8);
+    transition: opacity 0.2s, transform 0.35s;
+    letter-spacing: 1px;
+    font: 68.5%;
+}
+/* anh 2 */
+.container1 .anh2{
+    position: relative;
+    float: left;
+    overflow: hidden;
+    margin: 10px 1%;
+    overflow: hidden;
+    min-width: 320px;
+    max-width: 480px;
+    max-height: 360px;
+    text-align: center;
+    background: #3085a3;
+}
+.container1 .anh2 img{
+    position: relative;
+    min-height: 100%;
+    max-width: 100%;
+    opacity: 0.8;
+}
+.container1 .anh2 figcaption{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 2em;
+    font-size: 1.25em;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+
+}
+.container1 .anh2 figcaption::before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(72,76,97,0) 0%, rgba(72,76,97,0.8) 75%);
+    opacity: 0;
+    content: '';
+    transform: translate3d(0,50%,0);
+}
+.container1 .anh2 figcaption:hover{
+    background: linear-gradient(to bottom, rgba(72,76,97,0) 0%, rgba(72,76,97,0.8) 75%);
+    opacity: 1;
+}
+.container1 .anh2 figcaption::before, .container1 .anh2 figcaption p{
+    transition: opacity 0.35s, transform 0.35s;
+}
+.container1 .anh2 figcaption h2{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    color: #484c61;
+    transition: transform 0.35s, color 0.35s;
+    transform: translate3d(0,-50%,0);
+    word-spacing: -0.15em;
+    font-weight: 300;
+}
+.container1 .anh2 figcaption h2 span {
+    font-weight: 800;
+}
+.container1 .anh2 figcaption p{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 2em;
+    width: 100%;
+    opacity: 0;
+    transform: translate3d(0,10px,0);
+    letter-spacing: 1px;
+    font-size:68.5% ;
+    transition: opacity 0.35s, transform 0.35s;
+    text-transform: uppercase;
+
+}
+.container1 .anh2 figcaption:hover h2{
+    color: white;
+    transform: translate3d(0,-50%,0) translate3d(0,-40px,0);
+    transition: transform 0.35s, color 0.35s;
+}
+.container1 .anh2:hover, .container1 .anh2 figcaption:hover p{
+    opacity: 1;
+    transform: translate3d(0,0,0);
+    color: white;
+}
+/* anh 3  */
+.container2{
+    background: #4a3753;
+}
+.container2{
+    position: relative;
+    float: left;
+    overflow: hidden;
+    margin: 10px 1% ;
+    min-width: 320px;
+    max-width: 480px;
+    max-height: 360px;
+    width: 48%;
+    text-align: center;
+}
+.container2 .anh3 img{
+    opacity: 0.9;
+    transition: opacity 0.35s;
+    position: relative;
+    min-height: 100%;
+    max-width: 100%;
+}
+.container2 .anh3 figcaption{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 2em;
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.25em;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+.container2 .anh3 figcaption::before,.container2 .anh3 figcaption h2{
+    transition: transform 0.35s;
+}
+.container2 .anh3 figcaption h2{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 1em 1.5em;
+    width: 100%;
+    text-align: left;
+    transform: translate3d(0,-30px,0);
+    word-spacing: -01.5em;
+    font-weight: 300;
+}
+.container2 .anh3 figcaption h2 span{
+    font-weight: 800;
+}
+.container2 .anh3 figcaption h2 i{
+    font-style: normal;
+    opacity: 0;
+    transform: translate3d(0,-30px,0);
+}
+.container2 .anh3 figcaption::before{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 10px;
+    background: white;
+    content: '';
+    transform: translate3d(0,10px,0);
+}
+.container2 .anh3:hover figcaption::before, .container2 .anh3:hover h2,
+.container2 .anh3:hover h2 i{
+    opacity: 1;
+    transform: translate3d(0,0,0);
+}
+.container2 .anh3 figcaption::before, .container2 .anh3 h2{
+    transition: transform 0.35s;
+}
