@@ -242,3 +242,9 @@
 .container2 .anh3 figcaption::before, .container2 .anh3 h2{
     transition: transform 0.35s;
 }
+.container2 .anh3 img{
+    opacity: 1;
+}
+.container2 .anh3:hover img{
+    opacity: 0.5;
+}
