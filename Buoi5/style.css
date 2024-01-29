@@ -1,0 +1,147 @@
+/* reset css */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+*{
+    font-family: 'Inter',sans-serif;
+    font-size: 16px;
+}
+.header{
+    height: 10%;
+    padding: 20px;
+}
+.container .header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    width: 65%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.logoimg img{
+    width: 30px;
+    height: 30px;
+}
+.logo a{
+    text-decoration: none;
+    color:#74717a;
+}
+.logo button{
+    border: none;
+    background-color: transparent;
+    color: #74717a;
+}
+.logo a:hover, .logo button:hover{
+    color: #171321;
+}
+.tools{
+    width: 25%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.tools button{
+    padding: 10px;
+    background-color: #171321;
+    border-radius: 6px;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    border: 1px solid #171321;
+}
+.tools button:hover{
+    background-color: transparent;
+    color: #171321;
+}
+.tools a{
+    text-decoration: none;
+    color: #74717a;
+}
+.signin:hover{
+    color: #171321;
+}
+.fa-regular.fa-user{
+    display: none;
+}
+.fa-solid.fa-bars{
+    display: none;
+}
+.logo2{
+    display: none;
+}
+@media only screen and (min-width: 600px) and (max-width:1023px){
+    .header{
+        display: flex;
+        justify-content: space-between;
+        margin: 10px 15px 0px;
+    }
+    .logo2{
+        display: none;
+    }
+    .logo{
+        display: flex;
+        justify-content: flex-start;
+    }
+    .logo .text{
+        display: none;
+    }
+    .tools{
+        width: 40%;
+        display: flex;
+    }
+    .tools a{
+        display: none;
+    }
+    .tools .fa-solid, .tools .fa-regular{
+        display: block;
+    }
+    .fa-regular.fa-user{
+        order:1;
+    }
+    .fa-solid.fa-magnifying-glass{
+        order: 2;
+    }
+    .fa-solid.fa-bars{
+        order: 3;
+    }
+}
+@media only screen and (max-width: 599px){
+    .header{
+        margin-top: 20px;
+    }
+    .logo a, .logo button{
+        display: none;
+    }
+    .logo{
+        position: relative;
+        width: 0%;
+    }
+    .tools button, .tools a{
+        display: none;
+    }
+    .fa-solid.fa-bars{
+        display: block;
+    }
+    .tools{
+        width: 100%;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+    }
+    .logo2{
+        width: 30px;
+        height: 30px;
+        display: block;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
