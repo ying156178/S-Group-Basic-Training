@@ -1,0 +1,124 @@
+@media only screen and (max-width: 768px) {
+    .container{
+        width: 75%;
+    }
+    .navbar .logo{
+        display: none;
+    }
+    .navbar .logo1{
+        display: block;
+    }
+    .logo1 a{
+        text-decoration: none;
+    }
+    .logo1 a span{
+
+        width: 2.5rem;
+        height: 2.5rem;
+        background-color: black;
+        border-radius: 4px;
+        font-size: 1rem;
+        font-weight: 600;
+        padding: 0.5rem 0.9375rem;
+        color: white;
+    }
+    .navbar{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    /* introduction */
+    .introduction{
+        display: flex;
+        flex-direction: column;
+    }
+    .introduction .img{
+        width: 100%;
+        padding-bottom: 1.875rem;
+    }
+    .introduction .intro-text{
+        width: 100%;
+        padding: 0px;
+    }
+    .intro-text h1{
+        font-size: 1.875rem;
+        font-weight: 600;
+    }
+    .intro-exp li strong{
+        font-size: 1.875rem;
+    }
+    .intro-exp li span{
+        font-size: 0.875rem;
+        font-weight: 400;
+    }
+    /* about me */
+    .about-me{
+        padding-bottom: 3.75rem;
+    }
+    .about-me h2{
+        font-size: 1rem;
+
+    }
+    .about-me p{
+        font-size: 0.9375rem;
+        line-height: 2rem;
+    }
+    .about-me button{
+        font-size: 0.75rem;
+        border: 2px solid #F26464;
+        padding: 0.6875rem  0.625rem;
+    }
+    /* skill section  */
+    .skills{
+        display: flex;
+        flex-direction: column;
+    }
+    .skills .core, .skills .others{
+        width: 100%;
+        margin-bottom: 2.5rem;
+    }
+    div ul .list-spec{
+        font-size: 0.875rem;
+        margin-right: 0.625rem;
+        margin-bottom: 0.625rem;
+    }
+    /* work-exp section */
+    .work-exp-block{
+        display: flex;
+        flex-direction: column;
+        padding-top: 0.9375rem;
+    }
+    .work-exp-block .block{
+        margin-bottom: 2.5rem;
+    }
+    /* app section */
+    .lasted-block .app{
+        display: flex;
+        flex-direction: column;
+    }
+    .app-text, .app-img{
+        width: 100% !important;
+    }
+    .app-text p{
+        font-size: 0.9375rem;
+        line-height: 1.875rem;
+    }
+    button{
+        padding: 0.6875rem 0.625rem;
+    }
+    .lasted-block .app{
+        padding: 1.875rem;
+    }
+    /* footer */
+    .footer{
+        padding: 3.75rem 0.625rem;
+    }
+    .footer h4{
+        font-size: 2.5rem;
+    }
+    .footer .copyright{
+        font-size: 0.875rem;
+    }
+    .footer button{
+        margin-bottom: 1.875rem;
+    }
+}

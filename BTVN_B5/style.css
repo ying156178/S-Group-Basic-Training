@@ -1,0 +1,376 @@
+/* reset css */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+h2{
+    display: inline-block;
+    font-weight: 700;
+    letter-spacing: 1px;
+    border-bottom: 3px solid #F26464;
+    font-size: 1rem;
+    padding-bottom: 0.4375rem;
+    margin-bottom: 1.4375rem;
+}
+ul{
+    list-style-type: none;
+}
+h3{
+    color: #373737;
+}
+h1,h2,h3,p,ul{
+    color: #373737;
+}
+.container{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 4.375rem 0;
+    padding-bottom: 5rem;
+}
+/* navbar */
+.navbar-sec{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 5;
+    background-color: #FFF;
+    padding: 4.375rem 0;
+    transition-delay: 0s;
+    transition-duration: 0.4s;
+    transition-property: all;
+    transition-timing-function: ease;
+}
+/* .navbar-sec.fixed-navbar{
+    padding: 1.25rem 0;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+} */
+.navbar{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+.logo{
+    display: flex;
+}
+.logo a{
+    font-size: 1.125rem;
+    letter-spacing: 3px;
+    color: black;
+    text-decoration: none;
+}
+.logo a span{
+
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: black;
+    border-radius: 4px;
+    font-size: 1.375rem;
+    font-weight: 600;
+    padding: 0.625rem 0.9375rem;
+    color: white;
+    text-decoration: none;
+    margin-right: 0.75rem;
+}
+.navbar .link{
+    display: flex;
+}
+.navbar .link i{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: #F26464;
+    border-radius: 100%;
+    margin-left: 0.625rem;
+}
+.logo1{
+    display: none;
+}
+/* introduction section */
+.introduction{
+    display: flex;
+    margin-top: 4.375rem;
+    align-items: center;
+}
+.introduction .img{
+    width: 70%;
+}
+.introduction .img img{
+    width: 100%;
+}
+.introduction .intro-text{
+    padding-left: 4.375rem;
+    padding-right: 6.25rem;
+}
+.intro-text span{
+    letter-spacing: 1px;
+    font-weight: 500;
+    font-size: 1rem;
+    padding-bottom: 1.875rem;
+    margin-bottom: 1.875rem;
+}
+.intro-text h1{
+    font-weight: 600;
+    font-size: 3rem;
+    line-height: 3.75ren;
+    color: #000;
+    margin-top: 1.875rem;
+}
+.intro-text .intro-exp{
+    display: flex;
+    width: 60%;
+    list-style-type: none;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 3.75rem;
+}
+.intro-exp strong{
+    color: #F26464;
+    font-size: 2.25rem;
+    font-weight: 800;
+}
+/* about me section */
+.about-me{
+    padding-top: 3.75rem;
+    width: 100%;
+    padding-bottom: 7.5rem;
+}
+.about-me h2{
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    border-bottom: 3px solid #F26464;
+    margin-bottom: 1.4375rem;
+    padding-bottom: 0.4375rem;
+}
+.about-me p{
+    color: #373737;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    font-weight: 300;
+    margin-bottom: 3.75rem;
+}
+.about-me button{
+    display: block;
+    margin: 0 auto;
+    font-size: 0.75rem;
+    color: #F26464;
+    background-color: white;
+    padding: 1.0625rem 1.875rem;
+    border-radius: 60px;
+    border: 2px solid #F26464;
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+.about-me button:hover{
+    background-color: #F26464;
+    color: white;
+}
+/* skill section */
+.skills{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 6.5625rem;
+}
+
+.skills .core, .skills .others{
+    width: 50%;
+}
+.skills div h2{
+    margin-bottom: 1.4375rem;
+}
+.skills div{
+    padding-right: 1%;
+}
+ul .list-spec{
+    display: inline-block;
+    color: #373737;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0.625rem 1.25rem;
+    background-color: white;
+    border: 1px solid #D7D7D7;
+    border-radius: 27px;
+    margin-right: 0.9375rem;
+    margin-bottom: 0.9375rem;
+}
+/* work-exp section */
+.work-exp-block{
+    display: flex;
+}
+.work-exp-block div span{
+    font-size: 0.875rem;
+    color: #373737;
+    font-weight: 700;
+    padding-bottom: 0.625rem;
+    line-height: 1.5;
+}
+.work-exp-block .block{
+    padding-right: 4.375rem;
+}
+.block .heading{
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-bottom: 0.625rem;
+}
+.block .dept{
+    font-weight: 500;
+    font-size: 1.125rem;
+    padding-bottom: 1.875rem;
+    display: block;
+}
+.block p{
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.block ul .intro-exp{
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 300;
+    padding-left: 1.75rem;
+    position: relative;
+    margin-bottom: 1.25rem;
+}
+.block ul .intro-exp::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.625rem;
+    border-radius: 100%;
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: #373737;
+}
+/* app section */
+.lasted-block{
+    display: flex;
+    flex-direction: column;
+}
+.lasted-block .app{
+    display: flex;
+    padding-top: 2.5rem;
+    padding-left: 4.375rem;
+    padding-right: 4.375rem;
+    background-color: #F6F8FA;
+    margin-bottom: 2.5rem;
+}
+.lasted-block .app .app-img{
+    width: 42%;
+}
+.app-text{
+    width: 60%;
+    padding-bottom: 1.875rem;
+    padding-right: 3.75rem;
+}
+.lasted-block .app .app-img img{
+    max-width: 100%;
+}
+.app-text h3{
+    color: #000;
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+    font-weight: 600;
+    margin-bottom: 1.875rem;
+}
+.app-text p{
+    font-weight: 300;
+    font-size: 1.125rem;
+    line-height: 1.875rem;
+    margin-bottom: 1rem;
+}
+.app-text button{
+    display: inline-block;
+    font-size: 0.75rem;
+    line-height: 0.8125rem;
+    font-weight: 600;
+    letter-spacing: 3px;
+    color: #F26464;
+    padding: 1.0625rem 1.875rem;
+    border: 2px solid #F26464;
+    border-radius: 60px;
+    margin-top: 1.25rem;
+    background-color: transparent;
+    cursor: pointer;
+}
+.app-text button:hover{
+    color: white;
+    background-color: #F26464;
+}
+/* footer section  */
+.footer{
+    padding: 7.5rem;
+    background-color: #000;
+    text-align: center;
+}
+.footer span{
+    color: rgba(255,255,255,0.5);
+    font-weight: 700;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    display: block;
+    padding-bottom: 1.25rem;
+}
+.footer h4{
+    color: #FFF;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    line-height: 1.2;
+}
+.footer p{
+    letter-spacing: 1.13px;
+    color: #FFF;
+    font-size: 1.125rem;
+    margin-bottom: 2.5rem;
+}
+button{
+    display: inline-block;
+    font-size: 0.75rem;
+    line-height: 0.8125rem;
+    font-weight: 600;
+    letter-spacing: 3px;
+    color: #F26464;
+    padding: 1.0625rem 1.875rem;
+    border: 2px solid #F26464;
+    border-radius: 60px;
+    margin-top: 1.25rem;
+    background-color: transparent;
+    cursor: pointer;
+    text-decoration: none;
+    outline: none;
+    transition-delay: 0s;
+    transition-duration: 0.4s;
+    transition-property: all;
+    transition-timing-function: ease;
+    box-shadow: none;
+}
+button:hover{
+    background-color: #F26464;
+    color: white;
+}
+.footer button{
+    margin-bottom: 6.0625rem;
+}
+.footer .copyright{
+    color: rgba(255,255,255,0.5);
+    letter-spacing: 1px;
+    font-size: 1rem;
+    font-weight: 400;
+}
+a{
+    text-decoration: none;
+    color: rgba(255,255,255,0.5);
+    font-size: 0.875rem;
+}

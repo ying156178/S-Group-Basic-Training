@@ -109,11 +109,14 @@
     .fa-solid.fa-bars{
         order: 3;
     }
-}
-@media only screen and (max-width: 599px){
-    .header{
-        margin-top: 20px;
+    .tools i, .tools a, .tools button{
+        margin-left: 10px;
     }
+}
+@media only screen and (max-width: 600px){
+    /* .header{
+        margin-top: 20px;
+    } */
     .logo a, .logo button{
         display: none;
     }
@@ -132,7 +135,7 @@
         position: relative;
         display: flex;
         justify-content: space-between;
-        padding: 20px;
+        padding: 15px;
     }
     .logo2{
         width: 30px;
