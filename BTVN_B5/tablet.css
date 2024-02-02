@@ -61,7 +61,7 @@
         font-size: 0.9375rem;
         line-height: 2rem;
     }
-    button{
+    .about-me button{
         font-size: 0.75rem;
         border: 2px solid #F26464;
         padding: 0.6875rem  0.625rem;
@@ -103,7 +103,7 @@
         line-height: 1.875rem;
     }
     button{
-        padding: 0.6875rem 0.625rem;
+        padding: 0.6875rem 0.625rem !important;
     }
     .lasted-block .app{
         padding: 1.875rem;
