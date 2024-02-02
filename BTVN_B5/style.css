@@ -70,7 +70,6 @@ h1,h2,h3,p,ul{
     text-decoration: none;
 }
 .logo a span{
-
     width: 2.5rem;
     height: 2.5rem;
     background-color: black;
@@ -96,9 +95,20 @@ h1,h2,h3,p,ul{
     background-color: #F26464;
     border-radius: 100%;
     margin-left: 0.625rem;
+    cursor: pointer;
 }
 .logo1{
     display: none;
+}
+i.fa-brands{
+    transition-delay: 0s;
+    transition-duration: 0.4s;
+    transition-property: all;
+    transition-timing-function: ease;
+    box-shadow: none;
+}
+i.fa-brands:hover{
+    background-color: #000;
 }
 /* introduction section */
 .introduction{
