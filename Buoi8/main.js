@@ -5,7 +5,7 @@
 //     const b = document.getElementsByClassName('flex-container');
 //     // console.log(b);
 // //lấy ra 1 elements đầu tiên có selector được truyền vào
-//     const c = document.querySelector('hello')
+//     const c = document.querySelector('#hello')
 //     // console.log(c);
 //     const d = document.querySelectorAll('.hello')
 //     // console.log(d);
@@ -42,7 +42,7 @@
     // let b=document.getElementsByTagName('ul')
     // console.log(b);
     // b.removeChild(e[3])
-// remove child: remove ele con cua han 
+// removeChild: remove ele con cua han 
 // muon xoa chinh ban than
     // a.remove()
 
@@ -67,7 +67,7 @@
 // get gia tri cua 1 thuoc tinh
     // console.log(a.className);  //phai go className chu k phai Class
 // them className
-    //element className += " heheh"
+    //element.className += " heheh"
 
 
 // //js style: js k ho tro dau gach ngang 
