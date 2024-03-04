@@ -171,3 +171,6 @@ while (index_filter < data_filter1.length) {
 }
 
 console.log(res_filter1);
+
+
+
