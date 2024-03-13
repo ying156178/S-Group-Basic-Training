@@ -283,17 +283,17 @@ batDongBo()
 function batDongBo1() {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
-            //resolve('tai du lieu 2s')
+            resolve('tai du lieu 2s')
 
-            reject('tai du lieu  2s that bai')
+            // reject('tai du lieu  2s that bai')
         }, 2000)
     })
 }
 function batDongBo2() {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
-            //resolve('tai du lieu 3s')
-            reject('tai du lieu 3s that bai')
+            resolve('tai du lieu 3s')
+            // reject('tai du lieu 3s that bai')
         }, 3000)
     })
 }
