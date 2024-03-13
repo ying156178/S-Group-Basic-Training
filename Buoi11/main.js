@@ -168,3 +168,115 @@
 //catch cho phép phát hiện lỗi và báo cho người dùng biết 
 //lỗi trong he thong in ra trong console -> lấy lỗi trong console vào file riêng -> báo về để xử lý 
     // handleBdb4()
+
+    // api_url='https://pokeapi.co/api/v2/pokemon/pikachu'
+    // var h1=document.querySelector('h1')
+    // setTimeout(()=>{
+    //     fetch(api_url)
+    //     .then(res=>res.json())
+    //     .then(data =>{
+    //         console.log(data);
+    //         return data
+    //     })
+    //     .then(data=>{
+    //     h1.innerText=data.name
+    //     let ele=document.createElement('img')
+    //     document.body.appendChild(ele)
+    //     ele.src=data.sprites.front_default
+    //     ele.style.display='block'
+    //     ele.style.margin='0 auto'
+    //     ele.style.width='20%'
+    //     })    
+    //     },3000)
+
+//code tren sang async await 
+// ve viet de
+
+//local storage: nếu có key, value ở local thì đổi browser vẫn có, 
+//lưu vĩnh viễn chỉ có delete chứ k có expired 
+//stop server thì sẽ mất 
+// lưu giá trị string 
+
+//session storage: chỉ tồn tại trong 1 tab, nếu tắt tab bật lên lại thì nó cũng biến mất
+
+
+
+    api_url='https://pokeapi.co/api/v2/pokemon/pikachu'
+
+
+    // var h1=document.querySelector('h1')
+    // setTimeout(()=>{
+    //     fetch(api_url)
+    //     .then(res=>res.json())
+    //     .then(data =>{
+    //         console.log(data);
+    //         return data
+    //     })
+    //     .then(data=>{
+    //     h1.innerText=data.name
+    //     let ele=document.createElement('img')
+    //     document.body.appendChild(ele)
+    //     ele.src=data.sprites.front_default
+    //     ele.style.display='block'
+    //     ele.style.margin='0 auto'
+    //     ele.style.width='20%'
+    //     localStorage.setItem('name',data.name)
+    //     localStorage.setItem('src',data.sprites.front_default)
+    //     })    
+    //     },3000)
+    // const name1 =localStorage.getItem('name')  //đối số truyền vào là key 
+    // console.log(name1);
+    // const src=localStorage.getItem('src')
+    // console.log(src);
+
+
+
+    const name1 =localStorage.getItem('name')  //đối số truyền vào là key 
+    console.log(name1);
+    const src=localStorage.getItem('src')
+    console.log(src);
+    var h1=document.querySelector('h1')
+    if (name1 && src) {
+        console.log('hhheheh',src);
+        h1.innerText=name1
+        let ele=document.createElement('img')
+        document.body.appendChild(ele)
+        ele.src=src
+        el.style.display='block'
+        ele.style.margin='0 auto'
+        ele.style.width='20%'
+    } else{
+        setTimeout(async function(){
+            const response = await fetch(api_url)
+            data = await response.json()
+            console.log(data);
+            localStorage.setItem('name',data.name)
+            localStorage.setItem('src',data.sprites.front_default)
+            h1.innerText=name1
+            let ele=document.createElement('img')
+            document.body.appendChild(ele)
+            ele.src=src
+            el.style.display='block'
+            ele.style.margin='0 auto'
+            ele.style.width='20%'
+        },3000)
+    }
+
+
+    //tim them session storage 
+
+//JSON.stringtify() 
+async function fetchapi2(){
+    const response = await fetch(api_url)
+    data = await response.json()
+    console.log(data);
+    console.log(data,'gihihi');
+    localStorage.setItem('data',JSON.stringify(data))
+    console.log(JSON.parse(localStorage.getItem('data')).name);    
+}
+fetchapi2()
+
+//cac phuong thuc trong local storage
+//clear or remove pair key and value 
+//remove theo key
+//clear het tat ca 
