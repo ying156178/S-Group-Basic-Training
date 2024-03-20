@@ -231,36 +231,36 @@
 
 
 
-    const name1 =localStorage.getItem('name')  //đối số truyền vào là key 
-    console.log(name1);
-    const src=localStorage.getItem('src')
-    console.log(src);
-    var h1=document.querySelector('h1')
-    if (name1 && src) {
-        console.log('hhheheh',src);
-        h1.innerText=name1
-        let ele=document.createElement('img')
-        document.body.appendChild(ele)
-        ele.src=src
-        el.style.display='block'
-        ele.style.margin='0 auto'
-        ele.style.width='20%'
-    } else{
-        setTimeout(async function(){
-            const response = await fetch(api_url)
-            data = await response.json()
-            console.log(data);
-            localStorage.setItem('name',data.name)
-            localStorage.setItem('src',data.sprites.front_default)
-            h1.innerText=name1
-            let ele=document.createElement('img')
-            document.body.appendChild(ele)
-            ele.src=src
-            el.style.display='block'
-            ele.style.margin='0 auto'
-            ele.style.width='20%'
-        },3000)
-    }
+    // const name1 =localStorage.getItem('name')  //đối số truyền vào là key 
+    // console.log(name1);
+    // const src=localStorage.getItem('src')
+    // console.log(src);
+    // var h1=document.querySelector('h1')
+    // if (name1 && src) {
+    //     console.log('hhheheh',src);
+    //     h1.innerText=name1
+    //     let ele=document.createElement('img')
+    //     document.body.appendChild(ele)
+    //     ele.src=src
+    //     el.style.display='block'
+    //     ele.style.margin='0 auto'
+    //     ele.style.width='20%'
+    // } else{
+    //     setTimeout(async function(){
+    //         const response = await fetch(api_url)
+    //         data = await response.json()
+    //         console.log(data);
+    //         localStorage.setItem('name',data.name)
+    //         localStorage.setItem('src',data.sprites.front_default)
+    //         h1.innerText=name1
+    //         let ele=document.createElement('img')
+    //         document.body.appendChild(ele)
+    //         ele.src=src
+    //         el.style.display='block'
+    //         ele.style.margin='0 auto'
+    //         ele.style.width='20%'
+    //     },3000)
+    // }
 
 
     //tim them session storage 
@@ -278,5 +278,5 @@ fetchapi2()
 
 //cac phuong thuc trong local storage
 //clear or remove pair key and value 
-//remove theo key
+//remove thi theo key
 //clear het tat ca 
