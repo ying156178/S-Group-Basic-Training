@@ -49,6 +49,8 @@ document.addEventListener('DOMContentLoaded',function(){
         if ((userCreate != null && /\S/.test(userCreate)&&
         (passwordCreate != null && /\S/.test(passwordCreate)))){
             createAccount(userCreate,passwordCreate);
+            alert('Successfully registered')
+            window.location.href='../html/index.html'
         } else alert('Please enter your username and password')
     });
 })
@@ -93,6 +95,5 @@ document.addEventListener('DOMContentLoaded',function(){
     document.getElementById('logoutbutton').addEventListener('click',function(){
         if (confirm('Are you sure you want to log out')){
         window.location.href='../html/index.html'}
-        
     })})
 
