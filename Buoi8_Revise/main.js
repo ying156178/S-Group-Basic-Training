@@ -117,8 +117,8 @@
 
 
 //Event Listeners
-    var event=document.getElementById('imbut');
-    event.addEventListener('click', function(event){
+    var event1=document.getElementById('imbut');
+    event1.addEventListener('click', function(event){
         alert('Button clicked!!!')
         console.log(event.type);
         console.log(event.target);
