@@ -25,16 +25,14 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 // tao tk
-var userCreate, passwordCreate
-function createAccount () {
+// var userCreate, passwordCreate
+function createAccount (userCreate, passwordCreate) {
     //check xem local storageq is empty
     var keys = JSON.parse(localStorage.getItem('keys'));
     if (keys===null){
         keys=[];
     }
     //create a new account
-    userCreate=document.getElementById('register-user').value;
-    passwordCreate=document.getElementById('register-password').value;
     const objKey={
         'username':userCreate,
         'password':passwordCreate,
@@ -46,21 +44,18 @@ function createAccount () {
 //lang nghe su kien click vao nut register va check xem rong hay day du
 document.addEventListener('DOMContentLoaded',function(){
     document.getElementById('button-login').addEventListener('click',function(){
-    if (userCreate === '' || userCreate === null 
-    || passwordCreate === '' || passwordCreate === null){
-        alert('Please enter your username and password')
-    } else{
-        createAccount()
-    }
-    })
+        var userCreate=document.getElementById('register-user').value;
+        var passwordCreate=document.getElementById('register-password').value;
+        if ((userCreate != null && /\S/.test(userCreate)&&
+        (passwordCreate != null && /\S/.test(passwordCreate)))){
+            createAccount(userCreate,passwordCreate);
+        } else alert('Please enter your username and password')
+    });
 })
 
 //XU LY O TRANG LOGIN
 //check thong tin dang nhap o trang login
-var usernameLogin, passwordLogin;
-function login(){
-    usernameLogin=document.getElementById('login-input-user').value;
-    passwordLogin=document.getElementById('login-input-pass').value;
+function login(usernameLogin, passwordLogin){
     const keyLogin={
         'username':usernameLogin,
         'password':passwordLogin,
@@ -81,18 +76,23 @@ function login(){
 }
 document.addEventListener('DOMContentLoaded',function(){
     document.getElementById('button-login').addEventListener('click',function(){
-        if (usernameLogin != '' && passwordLogin != ''){
-            login()
-        }
-        else {
-            alert('Vui lòng nhập đầy đủ thông tin');
-            console.log('jehhe');
-        
-    }});
+        var usernameLogin=document.getElementById('login-input-user').value;
+        var passwordLogin=document.getElementById('login-input-pass').value;
+        if ((usernameLogin != null && /\S/.test(usernameLogin)&&
+        (passwordLogin != null && /\S/.test(passwordLogin)))){
+            login(usernameLogin,passwordLogin);
+        } else alert('Please enter your username and password')
+    });
 })
 function redirectToFinalPage(){
     window.location.href='../html/index1.html'
 }
 
-
+//main page
+document.addEventListener('DOMContentLoaded',function(){
+    document.getElementById('logoutbutton').addEventListener('click',function(){
+        if (confirm('Are you sure you want to log out')){
+        window.location.href='../html/index.html'}
+        
+    })})
 

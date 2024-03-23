@@ -140,3 +140,31 @@ input#checkbox{
     vertical-align: baseline;
 }
 /* login register box */
+/* Main Page */
+.big-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container1{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.container1>h1{
+    font-size: 64px;
+    font-weight: 700;
+}
+#logoutbutton{
+    width: 50%;
+    border: none;
+    border-radius: 10px;
+    background-color: #11698E;
+    color: #fff;
+    padding: 20px;
+    font-size: 36px;
+}
+/* Main Page */
