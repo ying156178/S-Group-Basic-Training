@@ -76,7 +76,7 @@ function login(usernameLogin, passwordLogin){
         }
         if(check){
             redirectToFinalPage()
-        } else alert('Wrong password')
+        } else alert('Wrong password or non existed account')
     } else alert('Non-existed account')
 }
 document.addEventListener('DOMContentLoaded',function(){
