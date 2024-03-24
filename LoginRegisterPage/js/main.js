@@ -77,7 +77,7 @@ function login(usernameLogin, passwordLogin){
         if(check){
             redirectToFinalPage()
         } else alert('Wrong password or non existed account')
-    } else alert('Non-existed account')
+    } else alert('Wrong password or non existed account')
 }
 document.addEventListener('DOMContentLoaded',function(){
     document.getElementById('button-login').addEventListener('click',function(){
