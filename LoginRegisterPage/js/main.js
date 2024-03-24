@@ -63,18 +63,21 @@ function login(usernameLogin, passwordLogin){
         'password':passwordLogin,
     }
     const parseKeys=JSON.parse(localStorage.getItem('keys'));
-    //check xem keyLogin co trong keys trong parseKeys hay k
-    check=false;
-    for (var i=0; i<parseKeys.length; i++){
-        if (parseKeys[i].username==keyLogin.username &&
-            parseKeys[i].password==keyLogin.password){
-                check=true;
-                break;
-            }
-    }
-    if(check){
-        redirectToFinalPage()
-    } else alert('Wrong pass or unexisted account')
+    //2 truong hop: neu trong local co va trong local k co key ten la keys
+    if (Array.isArray(parseKeys)){
+        //check xem keyLogin co trong keys trong parseKeys hay k
+        check=false;
+        for (var i=0; i<parseKeys.length; i++){
+            if (parseKeys[i].username==keyLogin.username &&
+                parseKeys[i].password==keyLogin.password){
+                    check=true;
+                    break;
+                }
+        }
+        if(check){
+            redirectToFinalPage()
+        } else alert('Wrong password')
+    } else alert('Non-existed account')
 }
 document.addEventListener('DOMContentLoaded',function(){
     document.getElementById('button-login').addEventListener('click',function(){
